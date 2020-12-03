@@ -3,7 +3,7 @@
 ![Code Coverage](https://img.shields.io/badge/coverage-100%25-brightgreen)
 ![License](https://img.shields.io/badge/license-Apache%202.0-blue)
 <br/>
-Kinux Kernel is a kernel for x86_64 based systems.
+Kinux Kernel is a kernel for x86-64 based systems.
 
 # Development
 The kernel development has started!
