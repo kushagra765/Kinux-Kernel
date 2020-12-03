@@ -1,6 +1,7 @@
 # Kinux Kernel
 ![Code Coverage](https://img.shields.io/badge/coverage-100%25-brightgreen)
 ![License](https://img.shields.io/badge/license-Apache%202.0-blue)
+[![CodeFactor](https://www.codefactor.io/repository/github/developer765/kinux-kernel/badge)](https://www.codefactor.io/repository/github/developer765/kinux-kernel)
 <br/>
 Kinux Kernel is a kernel for x86-64 based systems.
 
