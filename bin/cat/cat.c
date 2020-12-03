@@ -16,7 +16,7 @@ int main() {
            "-p to print file contents\n"
            "-c to copy one file contents to another (input two file paths)\n");
     printf("Type exit to Exit\n");
-    scanf("%s", input);
+    fgets(input, 10, stdin);
 
     if (strcmp(input, "-p")==0) {
        print_contents();
@@ -42,7 +42,7 @@ void print_contents() {
     char path[50], contents;
 
     printf("Enter file path:\n");
-    scanf("%s", path);
+    fgets(path, 50, stdin);
 
     //Opens the File for Reading
     ptr = fopen(path, "r");
@@ -72,12 +72,12 @@ void copy_contents() {
 
     //Gets the first input from the user from which the program will read the contents
     printf("Enter path for first file for reading:\n");
-    scanf("%s", path);
+    fgets(path, 50, stdin);
     ptr = fopen(path, "r");
 
     /* Gets the second input from the user from which the program will copy the contents of the file1 to file2 */
     printf("Enter path for second file for writing:\n");
-    scanf("%s", path2);
+    fgets(path2, 50, stdin);
     ptr2 = fopen(path2, "w");
 
     if (ptr || ptr2 == NULL) {
