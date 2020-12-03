@@ -11,7 +11,7 @@ int main() {
     printf("time utility\n");
 
     //Prints the time and exits
-    printf("%s\n", realtime);
+    printf("Time: %s\n", realtime);
 
     return 0;
 }
