@@ -1,5 +1,4 @@
 # Kinux Kernel
-![SL Scan](https://github.com/developer765/Kinux-Kernel/workflows/SL%20Scan/badge.svg?branch=main)
 ![Code Coverage](https://img.shields.io/badge/coverage-100%25-brightgreen)
 ![License](https://img.shields.io/badge/license-Apache%202.0-blue)
 <br/>
