@@ -1,4 +1,5 @@
 /* cat utility for Kinux Kernel */
+/* This FILE contains ERRORS, DO NOT USE IT .. When the issue is fixed this will be removed */
 
 #include <stdio.h>
 #include <string.h>
