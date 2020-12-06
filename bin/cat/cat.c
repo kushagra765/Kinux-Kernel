@@ -1,5 +1,4 @@
 /* cat utility for Kinux Kernel */
-/* This FILE contains ERRORS, DO NOT USE IT .. When the issue is fixed this will be removed */
 
 #include <stdio.h>
 #include <string.h>
@@ -17,7 +16,7 @@ int main() {
            "-p to print file contents\n"
            "-c to copy one file contents to another (input two file paths)\n");
     printf("Type exit to Exit\n");
-    fgets(input, 10, stdin);
+    scanf("%s", input);
 
     if (strcmp(input, "-p")==0) {
        print_contents();
@@ -43,7 +42,7 @@ void print_contents() {
     char path[50], contents;
 
     printf("Enter file path:\n");
-    fgets(path, 50, stdin);
+    scanf("%s", path);
 
     //Opens the File for Reading
     ptr = fopen(path, "r");
@@ -73,12 +72,12 @@ void copy_contents() {
 
     //Gets the first input from the user from which the program will read the contents
     printf("Enter path for first file for reading:\n");
-    fgets(path, 50, stdin);
+    scanf("%s", path);
     ptr = fopen(path, "r");
 
     /* Gets the second input from the user from which the program will copy the contents of the file1 to file2 */
     printf("Enter path for second file for writing:\n");
-    fgets(path2, 50, stdin);
+    scanf("%s", path2);
     ptr2 = fopen(path2, "w");
 
     if (ptr || ptr2 == NULL) {
