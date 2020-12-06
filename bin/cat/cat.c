@@ -29,7 +29,6 @@ int main() {
     }
     else {
         printf("Invalid Mode\n");
-
     }
 
     return 0;
