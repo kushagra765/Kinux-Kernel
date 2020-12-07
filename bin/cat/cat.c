@@ -1,7 +1,7 @@
 /* cat utility for Kinux Kernel */
 
 #include <stdio.h>
-#include "error.h"
+#include <error/error.h>
 #include <string.h>
 
 void print_contents();
