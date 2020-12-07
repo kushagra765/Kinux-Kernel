@@ -1,6 +1,7 @@
 /* cat utility for Kinux Kernel */
 
 #include <stdio.h>
+#include "error.h"
 #include <string.h>
 
 void print_contents();
@@ -9,7 +10,7 @@ void copy_contents();
 
 //Main Function
 int main() {
-    char input[10];
+    char input[5];
     printf("cat utility\n");
     printf("Usage: [mode]\n");
     printf("Modes:\n"
@@ -19,7 +20,7 @@ int main() {
     scanf("%s", input);
 
     if (strcmp(input, "-p")==0) {
-       print_contents();
+        print_contents();
     }
     else if (strcmp(input, "-c")==0) {
         copy_contents();
@@ -28,7 +29,8 @@ int main() {
         return 0;
     }
     else {
-        printf("Invalid Mode\n");
+        //Error Code 2 means a wrong input
+        error("Invalid Mode\n", 2);
     }
 
     return 0;
@@ -47,7 +49,8 @@ void print_contents() {
     ptr = fopen(path, "r");
 
     if (ptr == NULL) {
-        printf("An error occurred while opening the file\n");
+        //Error Code 3 means pointer is NULL
+        error("An error occurred while opening the file\n", 3);
     }
 
     contents = fgetc(ptr);
@@ -80,7 +83,8 @@ void copy_contents() {
     ptr2 = fopen(path2, "w");
 
     if (ptr || ptr2 == NULL) {
-        printf("An error occurred while opening files\n");
+        //Error Code 3 means pointer is NULL
+        error("An error occurred while opening files\n", 3);
     }
 
     //Gets the contents
