@@ -8,7 +8,7 @@ int main() {
     time(&systime);
     char *realtime = ctime(&systime);
 
-    printf("time utility\n");
+    printf("time command\n");
 
     //Prints the time and exits
     printf("Time: %s\n", realtime);
