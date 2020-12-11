@@ -11,8 +11,15 @@ The kernel development has started!
 # Getting Started
 If you want to compile this kernel, just follow these _steps_:
 > Install [CMake](https://cmake.org) on your system.
+<br/>
 > Then open CMake UI and then enter the 'source code' and 'where to build files' input boxes.
-> 
+<br/>
+> Click on Generate button, then select the generator and click on Generate.
+<br/>
+> CMake will generate the nessecary files and the _Makefile_ also.
+> Now, just 'cd' into the kernel source directory.
+> Now, 'cd' into the folder you want to compile.
+> Now, open your terminal and type 'gcc -c _file name_'.
 
 # Contributions
 If you want to contribute to this kernel, you can read the _CONTRIBUTING.md_ file in this repository.
