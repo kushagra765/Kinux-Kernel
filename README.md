@@ -8,6 +8,12 @@ Kinux Kernel is a kernel for x86-64 based systems.
 # Development
 The kernel development has started!
 
+# Getting Started
+If you want to compile this kernel, just follow these _steps_:
+> Install [CMake](https://cmake.org) on your system.
+> Then open CMake UI and then enter the 'source code' and 'where to build files' input boxes.
+> 
+
 # Contributions
 If you want to contribute to this kernel, you can read the _CONTRIBUTING.md_ file in this repository.
 
