@@ -21,10 +21,10 @@ If you want to compile this kernel, just follow these _steps_:
 ***If you see any code issues in compiling, just create an issue with the file name.***
 
 # Contributions
-If you want to contribute to this kernel, you can read the ```CONTRIBUTING.md``` file in this repository.
+If you want to contribute to this kernel, you can read the [```CONTRIBUTING.md```](https://github.com/kushagra765/Kinux-Kernel/blob/main/CONTRIBUTING.md) file in this repository.
 
 # License
-The kernel is licensed under _Apache License 2.0_. See the ```LICENSE``` file for more info.
+The kernel is licensed under _Apache License 2.0_. See the [```LICENSE```](https://github.com/kushagra765/Kinux-Kernel/blob/main/LICENSE) file for more info.
 
 # About
 Kinux Kernel is an open-source project for x86-64 based systems. It was started on 30 October 2020.
