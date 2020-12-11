@@ -18,6 +18,8 @@ If you want to compile this kernel, just follow these _steps_:
 6. Now, 'cd' into the folder you want to compile.
 7. Now, open your terminal and type 'gcc -c _file name_'.
 
+***If you see any code issues in compiling, just create an issue with the file name***
+
 # Contributions
 If you want to contribute to this kernel, you can read the _CONTRIBUTING.md_ file in this repository.
 
