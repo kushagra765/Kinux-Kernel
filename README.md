@@ -15,8 +15,8 @@ If you want to compile this kernel, just follow these _steps_:
 3. Click on Generate button, then select the generator and click on Generate.
 4. CMake will generate the nessecary files and the _Makefile_ also.
 5. Now, just 'cd' into the kernel source directory.
-6. Now, 'cd' into the folder you want to compile.
-7. Now, open your terminal and type 'gcc -c _file name_'.
+6. Now, '''cd''' into the folder you want to compile.
+7. Now, open your terminal and type '''gcc -c _file name_'''.
 
 # Contributions
 If you want to contribute to this kernel, you can read the _CONTRIBUTING.md_ file in this repository.
