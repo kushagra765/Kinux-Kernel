@@ -3,10 +3,7 @@
 ![Code Coverage](https://img.shields.io/badge/coverage-100%25-brightgreen)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue)](https://www.github.com/kushagra765/Kinux-Kernel/blob/main/LICENSE)
 <br/>
-Kinux Kernel is a kernel for x86-64 based systems.
-
-# Development
-The kernel development has started!
+Kinux Kernel is a kernel for 32 and 64 bit systems.
 
 # Getting Started
 If you want to compile this kernel, just follow these _steps_:
@@ -27,4 +24,4 @@ If you want to contribute to this kernel, you can read the [```CONTRIBUTING```](
 The kernel is licensed under _Apache License 2.0_. See the [```LICENSE```](https://github.com/kushagra765/Kinux-Kernel/blob/main/LICENSE) file for more info.
 
 # About
-Kinux Kernel is an open-source project for x86-64 based systems. It was started on 30 October 2020.
+Kinux Kernel is an open-source project for 32 and 64 bit systems. It was started on 30 October 2020.
