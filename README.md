@@ -10,12 +10,13 @@ Kinux Kernel is a kernel for 32 and 64 bit systems.
 # Getting Started
 If you want to compile this kernel, just follow these _steps_:
 1. Install [CMake](https://cmake.org) and [GCC](https://gnu.org/software/gcc/) on your system.
-2. Then open CMake UI and then enter the 'source code' and 'where to build files' input boxes.
+2. Then open CMake and then enter the 'source code' and 'where to build files' input boxes.
 3. Click on Generate button, then select the generator and click on Generate.
 4. CMake will generate the necessary files and the _Makefile_ also.
-5. Now, just ```cd``` into the kernel source directory.
-6. Now, ```cd``` into the folder you want to compile.
-7. Now, open your terminal and type ```gcc -c _file name_```.
+5. Make sure to copy the generated _Makefile_ to the folder you are compiling.
+6. Now, just ```cd``` into the kernel source directory.
+7. Now, ```cd``` into the folder you want to compile.
+8. Now, open your terminal and type ```gcc -c _file name_```.
 
 ***If you see any code issues in compiling, just create an issue with the file name.***
 
