@@ -16,7 +16,7 @@ If you want to compile this kernel, just follow these _steps_:
 5. Make sure to copy the generated _Makefile_ to the folder you are compiling.
 6. Now, just ```cd``` into the kernel source directory.
 7. Now, ```cd``` into the folder you want to compile.
-8. Now, open your terminal and type ```gcc -c _file name_```.
+8. Now, open your terminal and type ```gcc -c [file name]```.
 
 ***If you see any code issues in compiling, just create an issue with the file name.***
 
