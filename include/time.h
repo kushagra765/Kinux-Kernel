@@ -1,7 +1,7 @@
 #ifndef _TIME_H
-#define
+#define _TIME_H
 
-//This file has some important file functions
+//This file has some important time functions
 char *ctime(const time_t *timer);
 time_t time(time_t *timer);
 
