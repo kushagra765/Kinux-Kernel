@@ -17,7 +17,9 @@ int main() {
            "-p to print file contents\n"
            "-c to copy one file contents to another (input two file paths)\n");
     printf("Type exit to Exit\n");
-    scanf("%s", input);
+    do {
+        scanf("%s", input);
+    } while(input != "-p" || "-c" || "exit");
 
     if (strcmp(input, "-p")==0) {
         print_contents();
