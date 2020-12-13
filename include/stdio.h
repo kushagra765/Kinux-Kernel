@@ -8,7 +8,7 @@ extern int printf(const char *format, ...);
 extern int scanf(const char *format, ...);
 
 //Open Files
-int fopen(const char *filename, const char *mode);
+int fopen(const char *name, const char *mode);
 
 //Close Files
 int fclose(FILE *stream);
