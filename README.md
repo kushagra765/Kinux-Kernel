@@ -10,7 +10,7 @@ Kinux Kernel is a kernel for 32 and 64 bit systems.
 # Getting Started
 If you want to compile this kernel, just follow these _steps_:
 1. Install [GCC](https://gnu.org/software/gcc/) on your system.
-2. Open your termianl and ```cd``` into the kernel source directory.
+2. Open your terminal and ```cd``` into the kernel source directory.
 3. Now, ```cd``` into the folder you want to compile.
 4. Now, type ```gcc -c [file name]```.
 
