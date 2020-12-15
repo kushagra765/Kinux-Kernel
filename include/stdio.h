@@ -1,19 +1,32 @@
 #ifndef _STDIO_H
 #define _STDIO_H
 
-//Print Text
-extern int printf(const char *format, ...);
-
-//Take Input
-extern int scanf(const char *format, ...);
-
-//Open Files
-int fopen(const char *name, const char *mode);
-
-//Close Files
+int printf(const char *format, ...);
+int scanf(const char *format, ...);
+FILE *fopen(const char *filename, const char *mode);
 int fclose(FILE *stream);
-
-//Get Characters from a file
+int fprintf(FILE *stream, const char *format, ...);
+int sprintf(char *string, const char *format, ...);
+int vprintf(FILE *stream, const char *format, va_list arg);
+int vfscanf(FILE *stream, const char *format, va_list arg);
+int fscanf(FILE *stream, const char *format, ...);
+int fgets(char *string, int num, FILE *stream);
 int fgetc(FILE *stream);
+
+/* int ch is written because "int char" cannot be written */
+int fputc(int ch, FILE *stream);
+int fputs(const char *string, FILE *stream);
+int putchar(int ch);
+int getchar(void);
+int fputs(const char *string, FILE *stream);
+int fputc(int ch, FILE *stream);
+int puts(const char *string);
+int putc(int ch, FILE *stream);
+void perror(const char *string);
+int feof(FILE *stream);
+int ferror(FILE *stream);
+void rewind(FILE *stream);
+void clearerr(FILE *stream);
+errno_t fopen_s(FILE *ptr, const char *filename, const char *mode);
 
 #endif //_STDIO_H
