@@ -1,4 +1,4 @@
-/* echfs file system for Kinux Kernel */
+/* echfs file system */
 
 #include <stdio.h>
 #include <stdlib.h>
