@@ -20,7 +20,7 @@ If you want to compile this kernel, just follow these _steps_:
 
 # Development
 - [ ] Create commands 
-- [ ] Create fileysystem 
+- [ ] Create filesystem 
 - [x] Create Basic Include files
 - [x] Create CMakeLists.txt for commands
 
