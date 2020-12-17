@@ -1,8 +1,8 @@
 version: 2.1
 jobs:
-  build:
+  build-kinux-kernel:
     machine:
       image: 'ubuntu-2004:202010-01'
     steps:
       - checkout
-      - run: echo "Building!"
+      - run: echo "Building the Kernel!"
