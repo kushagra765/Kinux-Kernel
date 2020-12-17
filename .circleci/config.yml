@@ -6,11 +6,3 @@ jobs:
     steps:
       - checkout
       - run: echo "Building the Kernel!"
-  nightly:
-    triggers:
-      - schedule:
-          cron: "0 0 * * *"
-          filters:
-            branches:
-              only:
-                - main
