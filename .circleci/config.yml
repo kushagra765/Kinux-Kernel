@@ -1,9 +1,8 @@
 version: 2.1
-
-orbs:
-  welcome: circleci/welcome-orb@0.4.1
-
-workflows:
-  welcome:
-    jobs:
-      - welcome/run
+jobs:
+  build:
+    machine:
+      image: 'ubuntu-2004:202010-01'
+    steps:
+      - checkout
+      - run: echo "Building!"
