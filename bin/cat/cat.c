@@ -1,6 +1,7 @@
 /* cat utility for Kinux Kernel */
 
 #include <stdio.h>
+#include <kinux/error.h>
 #include <string.h>
 
 void print_contents();
@@ -9,17 +10,19 @@ void copy_contents();
 
 //Main Function
 int main() {
-    char input[10];
+    char input[5];
     printf("cat utility\n");
     printf("Usage: [mode]\n");
     printf("Modes:\n"
            "-p to print file contents\n"
            "-c to copy one file contents to another (input two file paths)\n");
     printf("Type exit to Exit\n");
-    fgets(input, 10, stdin);
+    do {
+        scanf("%s", input);
+    } while(input != "-p" || "-c" || "exit");
 
     if (strcmp(input, "-p")==0) {
-       print_contents();
+        print_contents();
     }
     else if (strcmp(input, "-c")==0) {
         copy_contents();
@@ -28,8 +31,8 @@ int main() {
         return 0;
     }
     else {
-        printf("Invalid Mode\n");
-
+        //Error Code 2 means a wrong input
+        error("Invalid Mode\n", 2);
     }
 
     return 0;
@@ -42,13 +45,14 @@ void print_contents() {
     char path[50], contents;
 
     printf("Enter file path:\n");
-    fgets(path, 50, stdin);
+    scanf("%s", path);
 
     //Opens the File for Reading
     ptr = fopen(path, "r");
 
     if (ptr == NULL) {
-        printf("An error occurred while opening the file\n");
+        //Error Code 3 means pointer is NULL
+        error("An error occurred while opening the file\n", 3);
     }
 
     contents = fgetc(ptr);
@@ -72,16 +76,17 @@ void copy_contents() {
 
     //Gets the first input from the user from which the program will read the contents
     printf("Enter path for first file for reading:\n");
-    fgets(path, 50, stdin);
+    scanf("%s", path);
     ptr = fopen(path, "r");
 
     /* Gets the second input from the user from which the program will copy the contents of the file1 to file2 */
     printf("Enter path for second file for writing:\n");
-    fgets(path2, 50, stdin);
+    scanf("%s", path2);
     ptr2 = fopen(path2, "w");
 
     if (ptr || ptr2 == NULL) {
-        printf("An error occurred while opening files\n");
+        //Error Code 3 means pointer is NULL
+        error("An error occurred while opening files\n", 3);
     }
 
     //Gets the contents
