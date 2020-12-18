@@ -16,8 +16,6 @@ If you want to compile this kernel, just follow these _steps_:
 3. Now, ```cd``` into the folder you want to compile.
 4. Now, type ```gcc -c [file name]```.
 
-***This process could take too much time, we are working to create some Makefiles to make it easier!***
-
 ***If you see any code issues in compiling, just create an issue with the file name.***
 
 # Development
