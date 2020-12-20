@@ -1,6 +1,13 @@
 version: 2.1
 jobs:
   build:
+    triggers:
+      - schedule:
+          cron: "0 0 * * *"
+          filters:
+            branches:
+              only:
+                - main
     machine:
       image: 'ubuntu-2004:202010-01'
     steps:
