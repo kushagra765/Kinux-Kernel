@@ -19,11 +19,10 @@ If you want to compile this kernel, just follow these _steps_:
 ***If you see any code issues in compiling, just create an issue with the file name.***
 
 # Development
-- [x] Create commands 
 - [ ] Create Makefiles
-- [ ] Create filesystem 
+- [ ] Create Boot Files
+- [ ] Create filesystem
 - [x] Create Basic Include files
-- [x] Create CMakeLists.txt for commands
 
 # Contributions
 If you want to contribute to this kernel, you can read the [```CONTRIBUTING```](https://github.com/kushagra765/Kinux-Kernel/blob/main/CONTRIBUTING.md) file in this repository.
