@@ -4,6 +4,7 @@
 int printf(const char *format, ...);
 int scanf(const char *format, ...);
 FILE *fopen(const char *filename, const char *mode);
+FILE *tmpfile(void);
 int fclose(FILE *stream);
 int fprintf(FILE *stream, const char *format, ...);
 int sprintf(char *string, const char *format, ...);
@@ -27,6 +28,8 @@ int feof(FILE *stream);
 int ferror(FILE *stream);
 void rewind(FILE *stream);
 void clearerr(FILE *stream);
+int remove(const char *filename);
+int rename(const char *oldname, const char *newname);
 errno_t fopen_s(FILE *ptr, const char *filename, const char *mode);
 
 #endif //_STDIO_H
