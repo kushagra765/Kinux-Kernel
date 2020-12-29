@@ -13,8 +13,6 @@ int vfscanf(FILE *stream, const char *format, va_list arg);
 int fscanf(FILE *stream, const char *format, ...);
 int fgets(char *string, int num, FILE *stream);
 int fgetc(FILE *stream);
-
-/* int ch is written because "int char" cannot be written */
 int fputc(int ch, FILE *stream);
 int fputs(const char *string, FILE *stream);
 int putchar(int ch);
