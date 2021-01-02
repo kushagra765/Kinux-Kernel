@@ -6,3 +6,4 @@ compiler: gcc
 branches:
   only:
   - main
+build: kernel/
