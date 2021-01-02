@@ -1,4 +1,6 @@
 # Kinux Kernel
+[![CircleCI](https://circleci.com/gh/kushagra765/Kinux-Kernel.svg?style=svg)](https://circleci.com/gh/kushagra765/Kinux-Kernel)
+<br/>
 [![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/kushagra765/Kinux-Kernel)
 <br/>
 [![CodeFactor](https://www.codefactor.io/repository/github/kushagra765/kinux-kernel/badge)](https://www.codefactor.io/repository/github/kushagra765/kinux-kernel)
