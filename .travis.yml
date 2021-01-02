@@ -1,9 +1,0 @@
-language: c
-arch: amd64
-os: linux
-dist: focal
-compiler: gcc
-branches:
-  only:
-  - main
-build: kernel/
