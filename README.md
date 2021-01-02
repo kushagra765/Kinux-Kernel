@@ -19,7 +19,6 @@ If you want to compile this kernel, just follow these _steps_:
 ***If you see any code issues in compiling, just create an issue with the file name.***
 
 # Development
-- [ ] Create Makefiles
 - [ ] Create Boot Files
 - [ ] Create filesystem
 - [x] Create Basic Include files
