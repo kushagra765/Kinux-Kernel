@@ -18,11 +18,12 @@ If you want to compile this kernel, just follow these _steps_:
 3. Now, ```cd``` into the folder you want to compile.
 4. Now, type ```gcc -c [file name]```.
 
-***If you see any code issues in compiling, just create an issue with the file name.***
+***If you see any code issues or errors in compiling, just create an issue with the file name and the error.***
 
 # Development
 - [ ] Create Boot Files
 - [ ] Create filesystem
+- [ ] Create Drivers
 - [x] Create Basic Include files
 
 # Contributions
