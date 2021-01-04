@@ -3,7 +3,7 @@
 <br/>
 [![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod&style=flat-square)](https://gitpod.io/#https://github.com/kushagra765/Kinux-Kernel)
 <br/>
-[![CodeFactor](https://www.codefactor.io/repository/github/kushagra765/kinux-kernel/badge)](https://www.codefactor.io/repository/github/kushagra765/kinux-kernel)
+[![CodeFactor](https://img.shields.io/codefactor/grade/github/kushagra765/Kinux-Kernel?style=flat-square)](https://www.codefactor.io/repository/github/kushagra765/kinux-kernel)
 <br/>
 ![Code Coverage](https://img.shields.io/badge/coverage-100%25-brightgreen?style=flat-square)
 <br/>
