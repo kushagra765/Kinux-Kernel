@@ -5,9 +5,9 @@
 <br/>
 [![CodeFactor](https://www.codefactor.io/repository/github/kushagra765/kinux-kernel/badge)](https://www.codefactor.io/repository/github/kushagra765/kinux-kernel)
 <br/>
-![Code Coverage](https://img.shields.io/badge/coverage-100%25-brightgreen)
+![Code Coverage](https://img.shields.io/badge/coverage-100%25-brightgreen?style=flat-square)
 <br/>
-[![License](https://img.shields.io/badge/license-Apache%202.0-blue)](https://www.github.com/kushagra765/Kinux-Kernel/blob/main/LICENSE)
+[![License](https://img.shields.io/badge/license-Apache%202.0-blue?style=flat-square)](https://www.github.com/kushagra765/Kinux-Kernel/blob/main/LICENSE)
 <br/>
 Kinux Kernel is a kernel for 32 and 64 bit systems.
 
