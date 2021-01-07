@@ -1,7 +1,7 @@
 # Kinux Kernel
 [![CircleCI](https://circleci.com/gh/kushagra765/Kinux-Kernel.svg?style=svg)](https://circleci.com/gh/kushagra765/Kinux-Kernel)
 <br/>
-![Discord](https://img.shields.io/discord/796391969555087360?style=flat-square)
+[![Discord](https://img.shields.io/discord/796391969555087360?style=flat-square)](https://discord.gg/j4sCebku47)
 <br/>
 [![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod&style=flat-square)](https://gitpod.io/#https://github.com/kushagra765/Kinux-Kernel)
 <br/>
@@ -15,6 +15,8 @@ Kinux Kernel is a kernel for 32 and 64 bit systems.
 
 # Getting Started
 If you want to compile this kernel, just follow these _steps_:
+
+Linux:
 1. Install [GCC](https://gnu.org/software/gcc/) on your system.
 2. Open your terminal and ```cd``` into the kernel source directory.
 3. Now, ```cd``` into the folder you want to compile.
