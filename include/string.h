@@ -6,5 +6,8 @@ char *strcpy(char *str1, char *str2);
 char *strcat(char *str1, char *str2);
 char *strlen(const char *str);
 char *strerror(int err_code);
+void *memcpy(void *str1, const void *str2, size_t n);
+void *memmove(void *str1, const void *str2, size_t n);
+int memcmp(const void *str1, const void *str2, size_t n);
 
 #endif //_STRING_H
