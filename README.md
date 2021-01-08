@@ -1,6 +1,8 @@
 # Kinux Kernel
 [![CircleCI](https://circleci.com/gh/kushagra765/Kinux-Kernel.svg?style=svg)](https://circleci.com/gh/kushagra765/Kinux-Kernel)
 <br/>
+[![Gitter](https://badges.gitter.im/Kinux-Kernel/community.svg)](https://gitter.im/Kinux-Kernel/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+<br/>
 [![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod&style=flat-square)](https://gitpod.io/#https://github.com/kushagra765/Kinux-Kernel)
 <br/>
 [![CodeFactor](https://www.codefactor.io/repository/github/kushagra765/kinux-kernel/badge)](https://www.codefactor.io/repository/github/kushagra765/kinux-kernel)
