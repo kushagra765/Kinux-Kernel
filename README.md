@@ -20,7 +20,7 @@ Linux:
 1. Install [GCC](https://gnu.org/software/gcc/) on your system.
 2. Open your terminal and ```cd``` into the kernel source directory.
 3. Now, ```cd``` into the folder you want to compile.
-4. Now, type ```gcc -c [file name]```.
+4. Type ```gcc -c [file name]```.
 
 ***If you see any code issues or errors in compiling, just create an issue with the file name and the error.***
 
