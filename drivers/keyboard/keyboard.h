@@ -1,6 +1,8 @@
 #ifndef _KEYBOARD_H
 #define _KEYBOARD_H
 
+/* PS/2 Keyboard Driver */
+
 // This file is still in development
 
 #define DATA_PORT 0x60
