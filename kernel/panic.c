@@ -1,5 +1,5 @@
 #include <kinux/kernel.h>
 
-void panic(const char *string) {
+void panic() {
      printm("Panic: %s", string);
 }     
