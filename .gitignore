@@ -1,5 +1,6 @@
 .github/
 .circleci/
-*.md
+README.md
+CONTRIBUTING.md
 .gitpod.yml
 .gitpod.Dockerfile
