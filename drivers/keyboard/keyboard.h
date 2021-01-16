@@ -61,5 +61,11 @@
 #define F11 0x57
 #define F12 0x58
 
+/* Navigation Keys */
+#define HOME 0x47
+#define END 0x4F
+#define PAGE_UP 0x49
+#define PAGE_DOWN 0x51
+
 
 #endif //_KEYBOARD_H
