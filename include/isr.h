@@ -18,4 +18,7 @@
 #define IRQ14 46
 #define IRQ15 47
 
+
+void handler_irq();
+
 #endif //_ISR_H
