@@ -1,4 +1,9 @@
+#ifndef _KINUX_KERNEL_H
+#define _KINUX_KERNEL_H
+
 /* This file contains some kernel functions */
 
-void panic(const char *string); //This function is used for kernel panic.
-void printm(const char *string); //This function is used by the kernel to print messages
+void panic(const char *string);
+void printm(const char *string);
+
+#endif //_KINUX_KERNEL_H
