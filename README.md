@@ -3,14 +3,13 @@
 <br/>
 [![Gitter](https://badges.gitter.im/Kinux-Kernel/community.svg)](https://gitter.im/Kinux-Kernel/community?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 <br/>
-[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod&style=flat-square)](https://gitpod.io/#https://github.com/kushagra765/Kinux-Kernel)
-<br/>
 [![CodeFactor](https://www.codefactor.io/repository/github/kushagra765/kinux-kernel/badge)](https://www.codefactor.io/repository/github/kushagra765/kinux-kernel)
 <br/>
 ![Code Coverage](https://img.shields.io/badge/coverage-100%25-brightgreen?style=flat-square)
 <br/>
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue?style=flat-square)](https://www.github.com/kushagra765/Kinux-Kernel/blob/main/LICENSE)
 <br/>
+
 Kinux Kernel is a kernel for 32 and 64 bit systems.
 
 # Getting Started
@@ -27,7 +26,8 @@ Linux:
 # Development
 - [ ] Create Boot Files
 - [ ] Create Filesystem
-- [ ] Create Drivers
+- [ ] Create Keyboard Driver
+- [ ] Create VGA Driver
 - [x] Create Basic Include files
 
 # Contributions
