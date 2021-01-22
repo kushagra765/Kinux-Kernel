@@ -1,5 +1,5 @@
-#ifndef _ISR_H
-#define _ISR_H
+#ifndef _IRQ_H
+#define _IRQ_H
 
 #define IRQ0 32
 #define IRQ1 33
@@ -38,4 +38,4 @@ extern void irq15();
 
 void handler_irq();
 
-#endif //_ISR_H
+#endif //_IRQ_H
