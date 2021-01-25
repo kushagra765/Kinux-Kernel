@@ -1,4 +1,4 @@
-#include "ports.h"
+#include <kinux/ports.h>
 
 unsigned char byte_in(unsigned short port) {
 	unsigned char result;
