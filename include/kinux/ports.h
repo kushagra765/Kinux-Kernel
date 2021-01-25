@@ -1,7 +1,6 @@
 #ifndef _PORTS_H
 #define _PORTS_H
 
-
 //Reads a byte from a port
 unsigned char byte_in(unsigned short port);
 
