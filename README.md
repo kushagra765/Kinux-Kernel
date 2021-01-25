@@ -12,7 +12,7 @@
 
 Kinux Kernel is a kernel for 32 and 64 bit systems.
 
-# Getting Started
+# Compiling
 If you want to compile this kernel, just follow these _steps_:
 
 Linux:
