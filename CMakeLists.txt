@@ -8,4 +8,6 @@ include_directories(include/kinux)
 include_directories(include/sys)
 
 add_executable(Kinux_Kernel
+        drivers/ports/ports.c
+        drivers/vga/vga.c
         kernel/panic.c)
