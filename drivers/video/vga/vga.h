@@ -1,5 +1,5 @@
-#ifndef __DRIVER_VGA_TEXT
-#define __DRIVER_VGA_TEXT
+#ifndef _VGA_H
+#define _VGA_H
 
 
 //define basic constants
@@ -74,4 +74,4 @@ void set_cursor_pos(unsigned char x, unsigned char y);
 
 //scroll line
 void scroll_line();
-#endif
+#endif //_VGA_H
