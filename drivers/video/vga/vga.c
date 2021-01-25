@@ -1,15 +1,15 @@
 #include "../../ports/ports.h"
-#include "./vga.h"
+#include "vga.h"
 
 volatile vga_char *TEXT_AREA = (vga_char*) VGA_START;
 
-unsigned char vga_color(const unsigned char fg_color, const unsigned char bg_color){
+unsigned char vga_color(const unsigned char fg_color, const unsigned char bg_color) {
     // Put bg color in the higher 4 bits and mask those of fg
     return (bg_color << 4) | (fg_color & 0x0F);
 }
 
 
-void clearwin(unsigned char fg_color, unsigned char bg_color){
+void clearwin(unsigned char fg_color, unsigned char bg_color) {
     const char space = ' ';
     unsigned char clear_color = vga_color(fg_color, bg_color);
 
@@ -24,7 +24,7 @@ void clearwin(unsigned char fg_color, unsigned char bg_color){
 }
 
 
-void putchar(const char character, const unsigned char fg_color, const unsigned char bg_color){
+void putchar(const char character, const unsigned char fg_color, const unsigned char bg_color) {
     unsigned short position = get_cursor_pos();
 
     if (character == '\n'){
@@ -66,7 +66,7 @@ void putchar(const char character, const unsigned char fg_color, const unsigned 
 }
 
 
-void putstr(const char *string, const unsigned char fg_color, const unsigned char bg_color){
+void putstr(const char *string, const unsigned char fg_color, const unsigned char bg_color) {
     while (*string != '\0'){
         putchar(*string++, fg_color, bg_color);
     }
@@ -86,7 +86,7 @@ unsigned short get_cursor_pos(){
 }
 
 
-void show_cursor(){
+void show_cursor() {
     unsigned char current;
 
     byte_out(CURSOR_PORT_COMMAND, 0x0A);
@@ -99,17 +99,17 @@ void show_cursor(){
 }
 
 
-void hide_cursor(){
+void hide_cursor() {
     byte_out(CURSOR_PORT_COMMAND, 0x0A);
     byte_out(CURSOR_PORT_DATA, 0x20);
 }
 
 
-void advance_cursor(){
+void advance_cursor() {
     unsigned short pos = get_cursor_pos();
     pos++;
 
-    if (pos >= VGA_EXTENT){
+    if (pos >= VGA_EXTENT) {
         scroll_line();
     }
 
@@ -121,7 +121,7 @@ void advance_cursor(){
 }
 
 
-void set_cursor_pos(unsigned char x, unsigned char y){
+void set_cursor_pos(unsigned char x, unsigned char y) {
     unsigned short pos = (unsigned short) x + ((unsigned short) VGA_WIDTH * y);
 
     if (pos >= VGA_EXTENT){
@@ -136,7 +136,7 @@ void set_cursor_pos(unsigned char x, unsigned char y){
 }
 
 
-void scroll_line(){
+void scroll_line() {
     // Copy memory buffer upward
     for(unsigned short i = 1; i < VGA_HEIGHT; i++){
         for(unsigned short j = 0; j < VGA_WIDTH; j++){
