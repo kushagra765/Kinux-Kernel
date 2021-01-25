@@ -27,7 +27,7 @@ Linux:
 - [ ] Create Boot Files
 - [ ] Create Filesystem
 - [ ] Create Keyboard Driver
-- [ ] Create VGA Driver
+- [x] Create VGA Driver
 - [x] Create Basic Include files
 
 # Contributions
