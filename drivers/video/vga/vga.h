@@ -1,7 +1,6 @@
 #ifndef _VGA_H
 #define _VGA_H
 
-
 //define basic constants
 #define VGA_START 0xb8000 //VGA start address
 #define VGA_WIDTH 80 //these are max coloumns in VGA
@@ -42,7 +41,7 @@
 
 //---------------------------------------------------
 //define a single character struct with close packing
-typedef struct __attribute__((packed)){
+typedef struct __attribute__((packed)) {
 	char character;
 	char style;
 } vga_char;
