@@ -1,5 +1,5 @@
-#ifndef _IRQ_H
-#define _IRQ_H
+#ifndef _ISR_H
+#define _ISR_H
 
 #define IRQ0 32
 #define IRQ1 33
@@ -35,7 +35,14 @@ extern void irq13();
 extern void irq14();
 extern void irq15();
 
+struct registers {
+   unsigned int gs, fs, es, ds;
+   unsigned int edi, esi, ebp, esp, ebx, edx, ecx, eax;
+   unsigned int int_no, err_code;
+   unsigned int eip, cs, eflags, useresp, ss;
+};
+
 
 void handler_irq();
 
-#endif //_IRQ_H
+#endif //_ISR_H
