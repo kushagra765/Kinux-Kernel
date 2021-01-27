@@ -35,13 +35,14 @@ extern void irq13();
 extern void irq14();
 extern void irq15();
 
-struct registers {
+struct registersr {
    unsigned int gs, fs, es, ds;
    unsigned int edi, esi, ebp, esp, ebx, edx, ecx, eax;
    unsigned int int_no, err_code;
    unsigned int eip, cs, eflags, useresp, ss;
 };
 
+typedef void(*handler)(registers*);
 
 void handler_irq();
 
