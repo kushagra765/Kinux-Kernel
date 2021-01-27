@@ -1,4 +1,4 @@
-#include <kinux/io.h>
+#include <kinux/ports.h>
 #include "keyboard.h"
 
 unsigned char keyboard_layout[128] = {
