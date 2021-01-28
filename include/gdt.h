@@ -17,7 +17,7 @@ struct pointer_gdt {
 } __attribute__((packed));
 
 
-struct entry_gdt gdt[5];
+struct entry_gdt gdt[3];
 struct pointer_gdt gdt_ptr;
 
 void init_gdt();
