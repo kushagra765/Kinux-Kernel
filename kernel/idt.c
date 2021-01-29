@@ -1,5 +1,5 @@
 #include <idt.h>
-#include <stdlib.h>
+#include <string.h>
 
 void set_gate_idt(uint8_t num, uint32_t base, uint16_t sel, uint8_t flags) {
      
