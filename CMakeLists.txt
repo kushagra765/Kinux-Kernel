@@ -11,4 +11,5 @@ add_executable(Kinux_Kernel
         drivers/ports/ports.c
         drivers/video/vga/vga.c
         kernel/gdt.c
+        kernel/idt.c
         kernel/panic.c)
