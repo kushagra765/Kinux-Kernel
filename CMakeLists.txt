@@ -10,4 +10,5 @@ include_directories(include/sys)
 add_executable(Kinux_Kernel
         drivers/ports/ports.c
         drivers/video/vga/vga.c
+        kernel/gdt.c
         kernel/panic.c)
