@@ -12,4 +12,5 @@ add_executable(Kinux_Kernel
         drivers/video/vga/vga.c
         kernel/gdt.c
         kernel/idt.c
+        kernel/isr.c
         kernel/panic.c)
