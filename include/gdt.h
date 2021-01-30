@@ -1,8 +1,6 @@
 #ifndef _GDT_H
 #define _GDT_H
 
-#include "stdint.h"
-
 struct entry_gdt {
    uint16_t low_limit;
    uint16_t low_base;
