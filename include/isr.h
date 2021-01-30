@@ -34,8 +34,14 @@ extern void isr29();
 extern void isr30();
 extern void isr31();
 
+struct registers {
+   unsigned int gs, fs, es, ds;
+   unsigned int edi, esi, ebp, esp, ebx, edx, ecx, eax;
+   unsigned int int_no, err_code;
+   unsigned int eip, cs, eflags, useresp, ss;
+};
+
 void install_isr();
 void handler_isr(struct registers *regs);
-void remove_handler_isr();
 
 #endif //_ISR_H
