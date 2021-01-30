@@ -38,7 +38,6 @@ extern void irq13();
 extern void irq14();
 extern void irq15();
 
-typedef void(*handler)(struct registers *regs);
 void install_irq_handler(int irq_num, void(*handler)(struct registers *regs));
 void uninstall_irq_handler(int irq_num);
 void install_irq();
