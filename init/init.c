@@ -4,6 +4,7 @@
 
 #include <idt.h>
 #include <gdt.h>
+#include <isr.h>
 #include <drivers/video/vga/vga.h>
 #include <drivers/ports/ports.h>
 #include <drivers/keyboard/keyboard.h>
