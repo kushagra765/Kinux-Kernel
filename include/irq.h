@@ -1,6 +1,8 @@
 #ifndef _IRQ_H
 #define _IRQ_H
 
+#include "isr.h"
+
 // IRQ
 #define IRQ0 32
 #define IRQ1 33
@@ -36,16 +38,10 @@ extern void irq13();
 extern void irq14();
 extern void irq15();
 
-typedef void(*handler)(registers*);
-void install_irq_handler(int irq_num, void(*handler)(registers*));
+typedef void(*handler)(struct registers *regs);
+void install_irq_handler(int irq_num, void(*handler)(struct registers *regs));
+void uninstall_irq_handler(int irq_num);
 void install_irq();
-void handler_irq();
-
-struct registers {
-   unsigned int gs, fs, es, ds;
-   unsigned int edi, esi, ebp, esp, ebx, edx, ecx, eax;
-   unsigned int int_no, err_code;
-   unsigned int eip, cs, eflags, useresp, ss;
-};
+void handler_irq(struct registers *regs);
 
 #endif //_IRQ_H
