@@ -22,7 +22,7 @@ void init_gdt() {
    
    set_gate_gdt(0, 0, 0, 0, 0);
    set_gate_gdt(1, 0, 0xFFFFFFFF, 0x9A, 0xCF);
-   set_gate_idt(2, 0, 0xFFFFFFFF, 0x92, 0xCF);
+   set_gate_gdt(2, 0, 0xFFFFFFFF, 0x92, 0xCF);
    
    /* flush_gdt() to be implemented */
    
