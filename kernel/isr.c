@@ -38,9 +38,47 @@ void install_isr() {
      set_gate_idt(31, (uint32_t)isr31, 0x08, 0x8E);
 }
 
+unsigned char *exceptions[] = {
+      "Division by zero",
+      "Debug",
+      "Non Maskable Interrupt",
+      "Breakpoint exception",
+      "Into Detected Overflow",
+      "Out of Bounds exception",
+      "Invalid Opcode exception",
+      "No Coprocessor exception",
+
+      "Double Fault exception",
+      "Coprocessor Segment Overrun",
+      "Bad TSS exception",
+      "Segment Not Present",
+      "Stack Fault exception",
+      "General Protection Fault",
+      "Page Fault exception",
+      "Unknown Interrupt exception",
+
+      "Coprocessor Fault exception",
+      "Alignment Check exception",
+      "Machine Check exception",
+      "Reserved",
+      "Reserved",
+      "Reserved",
+      "Reserved",
+      "Reserved",
+
+      "Reserved",
+      "Reserved",
+      "Reserved",
+      "Reserved",
+      "Reserved",
+      "Reserved",
+      "Reserved",
+      "Reserved"
+};
+
 void handler_isr(struct registers *regs) {
      
      if (regs->int_no <= 31) {
-        panic("Panic : An Exception Occured\n");
+        panic("Panic: An Exception Occured -- %s", exceptions[regs->int_no]);
      }
 }
