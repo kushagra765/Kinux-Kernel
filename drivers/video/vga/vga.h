@@ -1,6 +1,10 @@
 #ifndef _VGA_H
 #define _VGA_H
 
+/* drivers/video/vga/vga.h
+   Author - @jaychandra6
+*/
+
 //define basic constants
 #define VGA_START 0xb8000 //VGA start address
 #define VGA_WIDTH 80 //these are max coloumns in VGA
