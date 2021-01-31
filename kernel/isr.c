@@ -25,8 +25,17 @@ void install_isr() {
      set_gate_idt(18, (uint32_t)isr18, 0x08, 0x8E);
      set_gate_idt(19, (uint32_t)isr19, 0x08, 0x8E);
      set_gate_idt(20, (uint32_t)isr20, 0x08, 0x8E);
-     
-     /* Rest to be added soon */
+     set_gate_idt(21, (uint32_t)isr21, 0x08, 0x8E);
+     set_gate_idt(22, (uint32_t)isr22, 0x08, 0x8E);
+     set_gate_idt(23, (uint32_t)isr23, 0x08, 0x8E);
+     set_gate_idt(24, (uint32_t)isr24, 0x08, 0x8E);
+     set_gate_idt(25, (uint32_t)isr25, 0x08, 0x8E);
+     set_gate_idt(26, (uint32_t)isr26, 0x08, 0x8E);
+     set_gate_idt(27, (uint32_t)isr27, 0x08, 0x8E);
+     set_gate_idt(28, (uint32_t)isr28, 0x08, 0x8E);
+     set_gate_idt(29, (uint32_t)isr29, 0x08, 0x8E);
+     set_gate_idt(30, (uint32_t)isr30, 0x08, 0x8E);
+     set_gate_idt(31, (uint32_t)isr31, 0x08, 0x8E);
 }
 
 void handler_isr(struct registers *regs) {
