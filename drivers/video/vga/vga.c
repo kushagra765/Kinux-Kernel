@@ -1,3 +1,7 @@
+/* drivers/video/vga/vga.c
+   Author - @jaychandra6
+*/
+
 #include <kinux/ports.h>
 #include "vga.h"
 
