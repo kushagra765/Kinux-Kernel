@@ -12,7 +12,7 @@ void set_gate_idt(uint8_t num, uint32_t base, uint16_t sel, uint8_t flags) {
 
 void init_idt() {
      
-     pointer_idt.limit = (sizeof(struct entry_idt)*256) - 1;
-     pointer_idt.base = &idt;
+     idt_ptr.limit = (sizeof(struct entry_idt)*256) - 1;
+     idt_ptr.base = &idt;
      memset(&idt, 0, sizeof(struct entry_idt)*256);
 }
