@@ -11,13 +11,14 @@
 Kinux Kernel is a kernel for 32 and 64 bit systems.
 
 # Compiling
-If you want to compile this kernel, just follow these _steps_:
+To compile this kernel, just follow these _steps_:
 
 Linux:
 1. Install [GCC](https://gnu.org/software/gcc/) on your system.
-2. Open your terminal and ```cd``` into the kernel source directory.
-3. Now, ```cd``` into the folder you want to compile.
-4. Type ```gcc -c [file name]```.
+2. Download Kinux Kernel from [here](https://github.com/kushagra765/Kinux-Kernel/archive/main.zip) and extract it.
+3. Open your terminal and ```cd``` into the kernel source directory.
+4. Now, ```cd``` into the folder you want to compile.
+5. Type ```gcc -c [file name]```.
 
 ***If you see any code issues or errors in compiling, just create an issue with the file name and the error.***
 
@@ -28,6 +29,7 @@ Linux:
 - [x] Create Port Driver
 - [x] Create GDT
 - [x] Create IDT
+- [x] Create ISR
 - [x] Create VGA Driver
 - [x] Create Basic Include files
 
