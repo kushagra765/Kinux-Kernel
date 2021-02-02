@@ -1,4 +1,8 @@
-#include <kinux/ports.h>
+/* drivers/keyboard/keyboard.c
+ * Author - @kushagra765
+*/
+
+#include "../../include/kinux/ports.h"
 #include "keyboard.h"
 
 unsigned char keyboard_layout[128] = {
