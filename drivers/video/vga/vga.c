@@ -2,7 +2,7 @@
    Author - @jaychandra6
 */
 
-#include <kinux/ports.h>
+#include "../../../include/kinux/ports.h"
 #include "vga.h"
 
 volatile vga_char *TEXT_AREA = (vga_char*) VGA_START;
@@ -31,24 +31,24 @@ void clearwin(unsigned char fg_color, unsigned char bg_color) {
 void putchar(const char character, const unsigned char fg_color, const unsigned char bg_color) {
     unsigned short position = get_cursor_pos();
 
-    if (character == '\n'){
+    if (character == '\n') {
         unsigned char current_row = (unsigned char) (position / VGA_WIDTH);
 
-        if (++current_row >= VGA_HEIGHT){
+        if (++current_row >= VGA_HEIGHT) {
             scroll_line();
         }
-        else{
+        else {
             set_cursor_pos(0, current_row);
         }
     }
 
-    else if (character == '\r'){
+    else if (character == '\r') {
         unsigned char current_row = (unsigned char) (position / VGA_WIDTH);
 
         set_cursor_pos(0, current_row);
     }
 
-    else if (character == '\t'){
+    else if (character == '\t') {
         // Turn tab to 4 spaces
         for (unsigned char i = 0; i < 4; i++){
             putchar(' ', fg_color, bg_color);
@@ -71,13 +71,13 @@ void putchar(const char character, const unsigned char fg_color, const unsigned 
 
 
 void putstr(const char *string, const unsigned char fg_color, const unsigned char bg_color) {
-    while (*string != '\0'){
+    while (*string != '\0') {
         putchar(*string++, fg_color, bg_color);
     }
 }
 
 
-unsigned short get_cursor_pos(){
+unsigned short get_cursor_pos() {
     unsigned short position = 0;
 
     byte_out(CURSOR_PORT_COMMAND, 0x0F);
@@ -128,7 +128,7 @@ void advance_cursor() {
 void set_cursor_pos(unsigned char x, unsigned char y) {
     unsigned short pos = (unsigned short) x + ((unsigned short) VGA_WIDTH * y);
 
-    if (pos >= VGA_EXTENT){
+    if (pos >= VGA_EXTENT) {
         pos = VGA_EXTENT - 1;
     }
 
@@ -142,8 +142,8 @@ void set_cursor_pos(unsigned char x, unsigned char y) {
 
 void scroll_line() {
     // Copy memory buffer upward
-    for(unsigned short i = 1; i < VGA_HEIGHT; i++){
-        for(unsigned short j = 0; j < VGA_WIDTH; j++){
+    for(unsigned short i = 1; i < VGA_HEIGHT; i++) {
+        for(unsigned short j = 0; j < VGA_WIDTH; j++) {
             unsigned short to_pos = j + ((i - 1) * VGA_WIDTH);
             unsigned short from_pos = j + (i * VGA_WIDTH);
 
@@ -153,7 +153,7 @@ void scroll_line() {
 
     // Clear the final row
     unsigned short i = VGA_HEIGHT - 1;
-    for(unsigned short j = 0; j < VGA_WIDTH; j++){
+    for(unsigned short j = 0; j < VGA_WIDTH; j++) {
         unsigned short pos = j + (i * VGA_WIDTH);
 
         vga_char current = TEXT_AREA[pos];
