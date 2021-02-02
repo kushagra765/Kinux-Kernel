@@ -1,6 +1,6 @@
 #include "isr.h"
 #include "idt.h"
-#include <kinux/kernel.h>
+#include "../include/kinux/kernel.h"
 
 void install_isr() {
      
@@ -79,6 +79,7 @@ unsigned char *exceptions[] = {
 void handler_isr(struct registers *regs) {
      
      if (regs->int_no <= 31) {
-        panic("Panic: An Exception Occured -- %s", exceptions[regs->int_no]);
+        panic("Panic: An Exception Occured");
+        printm("%s", exceptions[regs->int_no]);
      }
 }
