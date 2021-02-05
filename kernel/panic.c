@@ -1,5 +1,5 @@
-#include <kinux/kernel.h>
+#include "../include/kinux/kernel.h"
 
 void panic() {
-     printm("Panic: %s", string);
+     printm("Kernel Panic: %s", string);
 }     
