@@ -28,6 +28,7 @@ Linux:
 - [ ] Create Boot Files
 - [ ] Create Filesystem
 - [ ] Create Keyboard Driver
+- [ ] Create IRQ
 - [x] Create Port Driver
 - [x] Create GDT
 - [x] Create IDT
