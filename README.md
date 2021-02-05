@@ -8,7 +8,9 @@
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue?style=flat-square)](https://www.github.com/kushagra765/Kinux-Kernel/blob/main/LICENSE)
 <br/>
 
-Kinux Kernel is a kernel for 32 and 64 bit systems.
+Kinux Kernel is a kernel for 32 and 64 bit systems. It supports many features such as GDT, IDT, ISR, Keyboard Driver and more!
+
+You can read [```docs/CREATE_YOUR_OWN_OS.md```](https://github.com/kushagra765/Kinux-Kernel/blob/main/docs/CREATE_YOUR_OWN_OS.md) to create your own os based on this kernel!
 
 # Compiling
 To compile this kernel, just follow these _steps_:
