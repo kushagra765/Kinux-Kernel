@@ -1,5 +1,5 @@
 # Creating your own OS
-To create your own os based on this kernel, you need to implement these things:
+To create your own basic os based on this kernel, you need to implement these things:
 
 1. Boot Files (In Assembly)
 2. GDT
