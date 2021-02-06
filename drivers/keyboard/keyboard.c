@@ -51,8 +51,6 @@ void handler_keyboard(struct registers *regs) {
      unsigned char keyboard_key_scancode;
      
      keyboard_key_scancode = byte_in(DATA_PORT);
-     
-    /* The code to check which key the user has pressed or released will be implemented later. */
 }
 
 void init_keyboard() {
