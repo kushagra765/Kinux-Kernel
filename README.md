@@ -27,7 +27,7 @@ Linux:
 # Development
 - [ ] Create Boot Files
 - [ ] Create Filesystem
-- [ ] Create Keyboard Driver
+- [x] Create Keyboard Driver
 - [x] Create IRQ
 - [x] Create Port Driver
 - [x] Create GDT
