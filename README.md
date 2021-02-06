@@ -1,10 +1,7 @@
 # Kinux Kernel
 [![CircleCI](https://circleci.com/gh/kushagra765/Kinux-Kernel.svg?style=svg)](https://circleci.com/gh/kushagra765/Kinux-Kernel)
-<br/>
 [![CodeFactor](https://www.codefactor.io/repository/github/kushagra765/kinux-kernel/badge)](https://www.codefactor.io/repository/github/kushagra765/kinux-kernel)
-<br/>
 ![Code Coverage](https://img.shields.io/badge/coverage-100%25-brightgreen?style=flat-square)
-<br/>
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue?style=flat-square)](https://www.github.com/kushagra765/Kinux-Kernel/blob/main/LICENSE)
 <br/>
 
@@ -34,7 +31,7 @@ Linux:
 - [x] Create IDT
 - [x] Create ISR
 - [x] Create VGA Driver
-- [x] Create Basic Include files
+- [x] Create Include files
 
 # Contributions
 If you want to contribute to this kernel, you can read the [```CONTRIBUTING```](https://github.com/kushagra765/Kinux-Kernel/blob/main/CONTRIBUTING.md) file in this repository.
