@@ -1,5 +1,5 @@
 # Contributions
-To contribute to this repository, you can review, change or create files in the kernel. Also you must mention the directory and the original author's name like this:
+To contribute to this repository, you can review, change or create files in the kernel. Also you must mention the directory in which the file is created and the original author's name like this:
 
 For ***.h*** files :
 
@@ -10,6 +10,8 @@ For ***.h*** files :
 /* directory/filename.h 
  * Author - name
 */
+
+#endif //_HEADER_H
 ```
 
 For ***.c*** files:
