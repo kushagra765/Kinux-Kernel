@@ -1,3 +1,7 @@
+/* kernel/irq.c
+ * Author - @kushagra765
+*/
+
 #include "../include/kinux/ports.h"
 #include "../include/kinux/kernel.h"
 #include "irq.h"
