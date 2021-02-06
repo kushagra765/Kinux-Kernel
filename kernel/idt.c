@@ -1,3 +1,7 @@
+/* kernel/idt.c
+ * Author - @kushagra765
+*/
+
 #include "idt.h"
 #include "../include/string.h"
 #include <stdint.h>
