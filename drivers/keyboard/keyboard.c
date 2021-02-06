@@ -3,6 +3,9 @@
 */
 
 #include "../../include/kinux/ports.h"
+#include "../../kernel/isr.h"
+#include "../../kernel/irq.h"
+#include "../../include/kinux/kernel.h"
 #include "keyboard.h"
 
 unsigned char keyboard_layout[128] = {
@@ -43,3 +46,16 @@ unsigned char keyboard_layout[128] = {
     0,	
     0,	
 };
+
+void handler_keyboard(struct registers *regs) {
+     unsigned char keyboard_key_scancode;
+     
+     keyboard_key_scancode = byte_in(DATA_PORT);
+     
+    /* The code to check which key the user has pressed or released will be implemented later. */
+}
+
+void init_keyboard() {
+     printm("[KERNEL] Initializing Keyboard");
+     install_irq_handler(IRQ1, handler_keyboard);
+}
