@@ -24,6 +24,9 @@ Linux:
 # Development
 - [ ] Create Boot Files
 - [ ] Create Filesystem
+- [ ] IPC
+- [ ] System Calls
+- [ ] libc
 - [x] Create Keyboard Driver
 - [x] Create IRQ
 - [x] Create Port Driver
