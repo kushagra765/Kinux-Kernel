@@ -38,10 +38,9 @@ extern void irq13();
 extern void irq14();
 extern void irq15();
 
-void install_irq_handler(int irq_num, void(*kernel_irq_handler)(struct registers *regs));
+void install_irq_handler(int irq_num, void(*handler)(struct registers *regs));
 void uninstall_irq_handler(int irq_num);
 void install_irq();
-void remap_kernel_irq();
 void handler_irq(struct registers *regs);
 
 #endif //_IRQ_H

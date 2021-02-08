@@ -1,7 +1,3 @@
-/* kernel/gdt.c
- * Author - @kushagra765
-*/
-
 #include <stdint.h>
 #include "gdt.h"
 
