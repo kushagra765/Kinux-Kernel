@@ -1,3 +1,7 @@
+/* kernel/gdt.c
+ * Author - @kushagra765
+*/
+
 #include <stdint.h>
 #include "gdt.h"
 
@@ -19,7 +23,7 @@ void set_gate_gdt(uint32_t num, uint32_t base, uint32_t limit, uint8_t access, u
 
 void init_gdt() {
    gdt_ptr.limit = (sizeof(struct entry_gdt)*3) - 1;
-   gdt_ptr.base = &gdt;
+   gdt_ptr.base = (uintptr_t)&gdt;
    
    set_gate_gdt(0, 0, 0, 0, 0);
    set_gate_gdt(1, 0, 0xFFFFFFFF, 0x9A, 0xCF);

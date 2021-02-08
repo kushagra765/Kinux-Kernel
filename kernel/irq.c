@@ -5,6 +5,7 @@
 #include "../include/kinux/ports.h"
 #include "../include/kinux/kernel.h"
 #include "irq.h"
+#include "idt.h"
 #include "isr.h"
 #include <stdint.h>
 
@@ -37,22 +38,22 @@ void remap_kernel_irq() {
 void install_irq() {
      printm("[KERNEL] Initializing IRQ");
      remap_kernel_irq();
-     set_gate_idt(32, (uint32_t)irq0, 0x08, 0x8E);
-     set_gate_idt(33, (uint32_t)irq1, 0x08, 0x8E);
-     set_gate_idt(34, (uint32_t)irq2, 0x08, 0x8E);
-     set_gate_idt(35, (uint32_t)irq3, 0x08, 0x8E);
-     set_gate_idt(36, (uint32_t)irq4, 0x08, 0x8E);
-     set_gate_idt(37, (uint32_t)irq5, 0x08, 0x8E);
-     set_gate_idt(38, (uint32_t)irq6, 0x08, 0x8E);
-     set_gate_idt(39, (uint32_t)irq7, 0x08, 0x8E);
-     set_gate_idt(40, (uint32_t)irq8, 0x08, 0x8E);
-     set_gate_idt(41, (uint32_t)irq9, 0x08, 0x8E);
-     set_gate_idt(42, (uint32_t)irq10, 0x08, 0x8E);
-     set_gate_idt(43, (uint32_t)irq11, 0x08, 0x8E);
-     set_gate_idt(44, (uint32_t)irq12, 0x08, 0x8E);
-     set_gate_idt(45, (uint32_t)irq13, 0x08, 0x8E);
-     set_gate_idt(46, (uint32_t)irq14, 0x08, 0x8E);
-     set_gate_idt(47, (uint32_t)irq15, 0x08, 0x8E);
+     set_gate_idt(32, (uintptr_t)irq0, 0x08, 0x8E);
+     set_gate_idt(33, (uintptr_t)irq1, 0x08, 0x8E);
+     set_gate_idt(34, (uintptr_t)irq2, 0x08, 0x8E);
+     set_gate_idt(35, (uintptr_t)irq3, 0x08, 0x8E);
+     set_gate_idt(36, (uintptr_t)irq4, 0x08, 0x8E);
+     set_gate_idt(37, (uintptr_t)irq5, 0x08, 0x8E);
+     set_gate_idt(38, (uintptr_t)irq6, 0x08, 0x8E);
+     set_gate_idt(39, (uintptr_t)irq7, 0x08, 0x8E);
+     set_gate_idt(40, (uintptr_t)irq8, 0x08, 0x8E);
+     set_gate_idt(41, (uintptr_t)irq9, 0x08, 0x8E);
+     set_gate_idt(42, (uintptr_t)irq10, 0x08, 0x8E);
+     set_gate_idt(43, (uintptr_t)irq11, 0x08, 0x8E);
+     set_gate_idt(44, (uintptr_t)irq12, 0x08, 0x8E);
+     set_gate_idt(45, (uintptr_t)irq13, 0x08, 0x8E);
+     set_gate_idt(46, (uintptr_t)irq14, 0x08, 0x8E);
+     set_gate_idt(47, (uintptr_t)irq15, 0x08, 0x8E);
 }
 
 void handler_irq(struct registers *regs) {
