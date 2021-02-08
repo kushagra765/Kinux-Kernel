@@ -17,7 +17,7 @@ Linux:
 2. Download Kinux Kernel from [here](https://github.com/kushagra765/Kinux-Kernel/archive/main.zip) and extract it.
 3. Open your terminal and ```cd``` into the kernel source directory.
 4. Now, ```cd``` into the folder you want to compile.
-5. Type ```gcc -c [file name]```.
+5. Type ```gcc -Wall -c [file name]```.
 
 ***If you see any code issues or errors in compiling, just create an issue with the file name and the error.***
 
