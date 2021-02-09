@@ -1,7 +1,7 @@
 #ifndef _IDT_H
 #define _IDT_H
 
-#include <stdint.h>
+#include "../include/stdint.h"
 
 struct entry_idt {
    uint16_t lo_base;
