@@ -7,7 +7,7 @@
 #include "irq.h"
 #include "idt.h"
 #include "isr.h"
-#include <stdint.h>
+#include "../include/stdint.h"
 
 void *kernel_routines_irq[16] = {
      0, 0, 0, 0, 0, 0, 0, 0,
