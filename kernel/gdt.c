@@ -2,7 +2,7 @@
  * Author - @kushagra765
 */
 
-#include <stdint.h>
+#include "../include/stdint.h"
 #include "gdt.h"
 
 void set_gate_gdt(uint32_t num, uint32_t base, uint32_t limit, uint8_t access, uint8_t gran) {
