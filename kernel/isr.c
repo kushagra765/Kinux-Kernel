@@ -1,7 +1,7 @@
 #include "isr.h"
 #include "idt.h"
 #include "../include/kinux/kernel.h"
-#include <stdint.h>
+#include "../include/stdint.h"
 
 void install_isr() {
      
