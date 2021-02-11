@@ -7,6 +7,7 @@ add_executable(Kinux_Kernel
         drivers/ports/ports.c
         drivers/video/vga/vga.c
         drivers/keyboard/keyboard.c
+        drivers/timer/timer.c
         kernel/gdt.c
         kernel/idt.c
         kernel/isr.c
