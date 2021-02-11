@@ -7,7 +7,7 @@
 
 Kinux Kernel is a kernel for 32 and 64 bit systems. It supports many features such as GDT, IDT, ISR, Keyboard Driver and more.
 
-WARNING: DO NOT USE THE FILESYSTEM CODE IN THIS REPOSITORY!
+***WARNING: DO NOT USE THE FILESYSTEM CODE IN THIS BRANCH!***
 
 You can read [```docs/CREATE_YOUR_OWN_OS.md```](https://github.com/kushagra765/Kinux-Kernel/blob/main/docs/CREATE_YOUR_OWN_OS.md) to create your own os based on this kernel.
 
