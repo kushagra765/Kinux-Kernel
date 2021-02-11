@@ -1,8 +1,12 @@
 version: 2.1
 jobs:
   build:
+    branches:
+      ignore:
+        - kinux-kernel-echfs
     machine:
       image: 'ubuntu-2004:202010-01'
+      
     steps:
       - checkout
       - run: echo "Building the Kernel!"
