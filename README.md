@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue?style=flat-square)](https://www.github.com/kushagra765/Kinux-Kernel/blob/main/LICENSE)
 <br/>
 
-Kinux Kernel is a kernel for x86_64 systems. It supports many features such as GDT, IDT, ISR, Keyboard Driver and more.
+Kinux Kernel is a kernel for x86_64 based systems. It supports many features such as GDT, IDT, ISR, Keyboard Driver and more.
 
 ***WARNING: DO NOT USE THE KERNEL CODE IN THIS BRANCH!***
 
