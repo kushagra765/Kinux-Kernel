@@ -23,4 +23,7 @@ typedef struct echfs_entry_t {
 typedef struct echfs_result {
      char file_name[201];
      int file_not_found;
-}
+} __attribute__((packed));
+
+
+#endif //_ECHFS_H
