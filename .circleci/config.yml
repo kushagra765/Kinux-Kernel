@@ -5,4 +5,4 @@ jobs:
       image: 'ubuntu-2004:202010-01'
     steps:
       - checkout
-      - run: echo "Building the Kernel!"
+      - run: echo "Building the Kernel"
