@@ -13,4 +13,5 @@ add_executable(Kinux_Kernel
         kernel/isr.c
         kernel/irq.c
         kernel/panic.c
-        lib/libc/errno/errno.c)
+        lib/libc/errno/errno.c
+        lib/libc/string/strcmp.c)
