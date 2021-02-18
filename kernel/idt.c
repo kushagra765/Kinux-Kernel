@@ -6,7 +6,7 @@
 #include "../include/string.h"
 #include "../include/stdint.h"
 
-void set_gate_idt(uint8_t num, uint32_t base, uint16_t sel, uint8_t flags) {
+void set_gate_idt(int num, uint32_t base, uint16_t sel, uint8_t flags) {
      
      idt[num].lo_base = base & 0xFFFF;
      idt[num].hi_base = (base >> 16) & 0xFFFF;
