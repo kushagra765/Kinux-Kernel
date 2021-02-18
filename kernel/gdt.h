@@ -23,7 +23,6 @@ struct entry_gdt gdt[3];
 struct pointer_gdt gdt_ptr;
 
 void init_gdt();
-extern void flush_gdt();
-void set_gate_gdt(uint32_t num, uint32_t base, uint32_t limit, uint8_t access, uint8_t gran);
+void set_gate_gdt(int num, uint32_t base, uint32_t limit, uint8_t access, uint8_t gran);
    
 #endif //_GDT_H
