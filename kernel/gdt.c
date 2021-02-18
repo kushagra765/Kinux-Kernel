@@ -5,7 +5,7 @@
 #include "../include/stdint.h"
 #include "gdt.h"
 
-void set_gate_gdt(uint32_t num, uint32_t base, uint32_t limit, uint8_t access, uint8_t gran) {
+void set_gate_gdt(int num, uint32_t base, uint32_t limit, uint8_t access, uint8_t gran) {
 
      /* Set the base address */
      gdt[num].low_base = (base & 0xFFFF);
