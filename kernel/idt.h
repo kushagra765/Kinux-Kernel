@@ -22,7 +22,6 @@ struct entry_idt idt[256];
 struct pointer_idt idt_ptr;
 
 void init_idt();
-extern void flush_idt();
-void set_gate_idt(uint8_t num, uint32_t base, uint16_t sel, uint8_t flags);
+void set_gate_idt(int num, uint32_t base, uint16_t sel, uint8_t flags);
 
 #endif //_IDT_H
