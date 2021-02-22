@@ -23,7 +23,7 @@ Linux:
 
 # Development
 - [ ] Create Boot Files
-- [ ] Create Filesystem
+- [ ] Create Filesystem (see kinux-kernel-echfs branch)
 - [ ] IPC
 - [ ] System Calls
 - [ ] libc
