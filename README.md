@@ -1,5 +1,4 @@
 # Kinux Kernel
-![Code Coverage](https://img.shields.io/badge/coverage-100%25-brightgreen?style=flat-square)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue?style=flat-square)](https://www.github.com/kushagra765/Kinux-Kernel/blob/main/LICENSE)
 <br/>
 
