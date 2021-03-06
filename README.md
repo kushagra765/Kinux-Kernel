@@ -1,6 +1,4 @@
 # Kinux Kernel
-[![CircleCI](https://circleci.com/gh/kushagra765/Kinux-Kernel.svg?style=svg)](https://circleci.com/gh/kushagra765/Kinux-Kernel)
-[![CodeFactor](https://www.codefactor.io/repository/github/kushagra765/kinux-kernel/badge)](https://www.codefactor.io/repository/github/kushagra765/kinux-kernel)
 ![Code Coverage](https://img.shields.io/badge/coverage-100%25-brightgreen?style=flat-square)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue?style=flat-square)](https://www.github.com/kushagra765/Kinux-Kernel/blob/main/LICENSE)
 <br/>
